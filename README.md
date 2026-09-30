@@ -12,7 +12,7 @@ It talks to you in your own language and works in any country.
 
 ## Getting started
 ```bash
-git clone <this repository's URL> curador-de-lazer
+git clone https://github.com/BernardoBehring/curador-de-lazer.git
 cd curador-de-lazer
 claude
 ```
