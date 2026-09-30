@@ -1,0 +1,16 @@
+{
+  "agent": "curador-de-lazer",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Edit",
+      "Write",
+      "WebSearch",
+      "WebFetch",
+      "Skill",
+      "ToolSearch",
+      "mcp__claude_ai_Gmail"
+    ]
+  }
+}

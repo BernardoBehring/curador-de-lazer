@@ -1,0 +1,8 @@
+# Personal data — each person's own profile and history, never shared
+profile.md
+history.md
+history-archive.md
+logs/
+
+# Personal Claude Code settings
+.claude/settings.local.json
