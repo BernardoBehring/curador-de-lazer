@@ -52,8 +52,11 @@ git pull
 Your profile and history are untouched.
 
 ## How it's built
-- `.claude/agents/curador-de-lazer.md` — the agent and its shared rules.
-- `.claude/skills/` — one skill per flow (interview, recommendations, tonight,
-  weekend, similar-to, feedback, check-in, email, weekly send, setup).
+- `.claude/agents/curador-de-lazer.md` — the agent: role, principles and routing.
+- `.claude/skills/` — **atomic skills**, each doing exactly one thing (check
+  eligibility, filter by Companions, find events, format an event line…), and
+  **orchestration skills** (the `/` commands above) that only chain them. Every
+  rule lives in exactly one skill — see
+  [docs/adr/0001-atomic-skills.md](docs/adr/0001-atomic-skills.md).
 - `CONTEXT.md` — the glossary of terms the Curador uses.
 - `scripts/` — the weekly-send launchers for each system.

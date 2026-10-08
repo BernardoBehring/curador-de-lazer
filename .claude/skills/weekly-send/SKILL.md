@@ -1,24 +1,18 @@
 ---
 name: weekly-send
-description: Automatic weekly run (no user present) that builds the weekend suggestions and emails them. Use only when the prompt says "Weekly send" (launched by the OS scheduler).
+description: Builds and emails the weekend digest with no user present. Use only when the prompt says "Weekly send" (launched by the OS scheduler).
+user-invocable: false
 ---
 
-# Automatic weekly send
+# Weekly send
 
-You're running with nobody at the terminal. **Never ask questions or wait for
-answers.** Write the email in the profile's Language.
+Orchestration only — no rules here. Automatic mode: never ask anything.
 
-1. Read `profile.md`, `history.md` and `history-archive.md` (if it exists).
-2. If there's no profile, or Email is missing or `off`, stop without sending and
-   write the reason in one line (it goes to the log).
-3. Don't run the check-in and don't ask how events went; instead, count what's
-   pending:
-   - check-in overdue (30+ days);
-   - Queued Events whose date has passed;
-   - items Queued for over 3 months.
-4. Follow the `weekend` skill (no Companion, from Home), including logging to
-   the history.
-5. If anything is pending, add at the end:
-   "🔔 You have N things to review (…) — open the Curador when you can."
-6. Send with the `send-email` skill, type `Weekly digest`. On failure, write the
-   error in one line and stop.
+1. No `profile.md` → write "no profile" in one line and stop.
+2. `resolve-email` with "automatic". No email → write the reason in one line
+   and stop.
+3. `list-pending`.
+4. `weekend` with "no-email".
+5. If pending items exist, append: "🔔 N things to review (…) — open the
+   Curador when you can." (in the user's Language).
+6. `compose-email` with type Weekly digest, then `send-email`.
