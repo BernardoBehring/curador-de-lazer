@@ -16,3 +16,8 @@ Orchestration only — no rules here. Automatic mode: never ask anything.
 5. If pending items exist, append: "🔔 N things to review (…) — open the
    Curador when you can." (in the user's Language).
 6. `compose-email` with type Weekly digest, then `send-email`.
+7. End your reply with exactly one status line (in English, read by the
+   launcher script):
+   - `WEEKLY-SEND: SENT <address>`
+   - `WEEKLY-SEND: NOT SENT — <short reason>` (no profile, no email, tool
+     denied, send failed…)

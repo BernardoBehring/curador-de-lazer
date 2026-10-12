@@ -43,7 +43,15 @@ Run `/setup-weekly-send`. The Curador detects your system and schedules a
 weekly run (Task Scheduler on Windows, launchd on macOS, cron on Linux) that
 emails you the weekend's suggestions. The computer must be on at that time
 (on macOS and Windows, a missed run happens when the computer wakes up).
-Logs go to `logs/weekly-send.log`.
+Each run is logged in `logs/weekly-send.log`: the tools it was allowed, how
+long it took, the cost, any tool that was denied, the full reply and a final
+status line (`WEEKLY-SEND: SENT …` or `WEEKLY-SEND: NOT SENT — reason`). The
+raw output of the last run is in `logs/last-run.json`. The scheduler also sees
+the outcome as an exit code: 0 = sent, 2 = nothing sent, 1 = failed.
+
+The tools the weekly run may use come from `permissions.allow` in
+`.claude/settings.json` and are passed to Claude by the launcher script, so the
+weekly send works even before you've opened the folder interactively.
 
 ## Updating
 ```bash
