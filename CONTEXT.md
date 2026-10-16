@@ -47,7 +47,10 @@ The profile's address that is both sender and recipient of every emailed recomme
 _Avoid_: Redo profile (that is the full interview)
 
 **Weekly send**:
-A weekend round generated and emailed automatically, with no User present and no questions asked. Anything needing an answer is flagged as pending.
+A round generated and emailed automatically every week, with no User present and no questions asked. It contains the categories chosen in the Weekly digest; anything needing an answer is flagged as pending.
+
+**Weekly digest**:
+The User's choice of what the Weekly send contains: any mix of films, series, books and events (all four by default). Events cover the 7 days until the next send.
 
 ### Titles and feedback
 

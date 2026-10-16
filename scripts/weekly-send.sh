@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Launched weekly by launchd (macOS) or cron (Linux).
-# Runs the Curador headless: builds the weekend suggestions and emails them.
+# Runs the Curador headless: builds the weekly digest and emails it.
 #
 # Exit codes: 0 = email sent · 2 = run finished but nothing was sent · 1 = the run failed
 set -u

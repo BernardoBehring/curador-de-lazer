@@ -1,5 +1,5 @@
 # Launched weekly by Windows Task Scheduler (task "Curador de Lazer - weekly send").
-# Runs the Curador headless: builds the weekend suggestions and emails them.
+# Runs the Curador headless: builds the weekly digest and emails it.
 #
 # Exit codes (shown as "Last Run Result" in Task Scheduler):
 #   0 = email sent | 2 = run finished but nothing was sent | 1 = the run failed

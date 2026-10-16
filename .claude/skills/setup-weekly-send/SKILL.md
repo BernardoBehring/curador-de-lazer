@@ -12,7 +12,9 @@ Orchestration only — no rules here.
 2. `detect-os`.
 3. Removing → `unschedule-<os>`, confirm in one line, stop.
 4. `find-claude-binary` with the OS.
-5. Ask the day and time (default: Thursday 18:00, local time).
+5. Ask the day and time (default: Thursday 18:00, local time), and what the
+   email should contain (current value from `resolve-digest-content`); save a
+   changed content with `write-profile` (Weekly digest field).
 6. `schedule-<os>` with the project root (current working directory), claude
    path, day and time.
 7. Confirm in one line: system, day, time, log at `logs/weekly-send.log`.

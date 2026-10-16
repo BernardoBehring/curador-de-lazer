@@ -41,7 +41,9 @@ Add a companion or a place to any request: `/weekend with Ana in Porto`.
 ## Weekly email (Windows, macOS, Linux)
 Run `/setup-weekly-send`. The Curador detects your system and schedules a
 weekly run (Task Scheduler on Windows, launchd on macOS, cron on Linux) that
-emails you the weekend's suggestions. The computer must be on at that time
+emails you a round of suggestions. You choose what it contains — any mix of
+films, series, books and events (events cover the next 7 days); by default,
+all four. Change it any time with `/setup-weekly-send`. The computer must be on at that time
 (on macOS and Windows, a missed run happens when the computer wakes up).
 Each run is logged in `logs/weekly-send.log`: the tools it was allowed, how
 long it took, the cost, any tool that was denied, the full reply and a final

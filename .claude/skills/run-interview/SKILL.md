@@ -25,7 +25,8 @@ instead of asking from scratch.
    maximum distance; free time on weekdays and weekends; **Email** — explain
    suggestions are sent from that address to itself through the Gmail connector,
    so it must be the Gmail account connected to their Claude (or "off");
-   preferred local sources.
+   if Email isn't off, what the **weekly email** should contain (films, series,
+   books, events — any mix; default all); preferred local sources.
 2. **Companions**: who they go out or watch things with, and each one's strong
    "no"s.
 3. **Films**: all-time favourites, recent ones they liked, ones they gave up on.
